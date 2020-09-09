@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+{{#if user}}
+<h2>Welcome {{user.username}}</h2>
+{{/if}}
+{{#unless user}}
+  <p><a href="/signup">Sign up</a></p>
+  <p><a href="/login">Log in</a></p>
+{{else}}
+  <p><a href="/logout">Log out</a></p>
+{{/unless}}
